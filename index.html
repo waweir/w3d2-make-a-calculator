@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Stylesheets go here. -->
+  <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/global.css" />
+  <script src="https://use.fontawesome.com/aa712d5a17.js"></script>
+</head>
+<body>
+  <!-- Content goes here. -->
+    <div class="container">
+
+    </div>
+    <form class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <input type="text" id="finalNumber">
+        </div>
+
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <label for="firstValue">First Value</label>
+              <input id="firstValue" type="text" class="form-control">
+            </div>
+            <div class="col-sm-6 form-group">
+              <label for="secondValue">Second Value</label>
+              <input id="secondValue" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 col-xs-6 text-center">
+              <button class="btn" type="button" id="addButton"><i class="fa fa-plus fa-5x" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-sm-3 col-xs-6 text-center">
+              <button class="btn" type="button" id="subtractButton"><i class="fa fa-minus fa-5x" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-sm-3 col-xs-6 text-center">
+              <button class="btn" type="button" id="multiplyButton"><i class="fa fa-times fa-5x" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-sm-3 col-xs-6 text-center">
+              <button class="btn" type="button" id="divideButton"><img src="img/division-sign.svg" alt="divide"></button>
+            </div>
+          </div>
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <button class="btn btn-lg btn-block" type="button" id="clearButton">Clear</button>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+
+    </form>
+  <!-- Scripts go here. -->
+  <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
+  <script type="text/javascript" src="js/calc.js"></script>
+</body>
+</html>
