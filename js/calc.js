@@ -8,7 +8,11 @@ function multiply(x, y) {
     return x * y
 }
 function divide(x, y) {
-    return x / y
+    if (y == 0) {
+        return 'Can\'t divide by 0'
+    } else  {
+        return x / y
+    }
 }
 function remainder(x, y) {
     return x % y
@@ -42,8 +46,8 @@ document.getElementById('addButton').addEventListener('click', function() {
 
 // subtract button
 document.getElementById('subtractButton').addEventListener('click', function() {
-    var firstValue = document.getElementById('firstValue').value
-    var secondValue = document.getElementById('secondValue').value
+    var firstValue = Number(document.getElementById('firstValue').value)
+    var secondValue = Number(document.getElementById('secondValue').value)
 
     var answer = subtract(firstValue, secondValue)
 
@@ -52,8 +56,8 @@ document.getElementById('subtractButton').addEventListener('click', function() {
 
 // multiply button
 document.getElementById('multiplyButton').addEventListener('click', function() {
-    var firstValue = document.getElementById('firstValue').value
-    var secondValue = document.getElementById('secondValue').value
+    var firstValue = Number(document.getElementById('firstValue').value)
+    var secondValue = Number(document.getElementById('secondValue').value)
 
     var answer = multiply(firstValue, secondValue)
 
@@ -62,8 +66,8 @@ document.getElementById('multiplyButton').addEventListener('click', function() {
 
 // divide button
 document.getElementById('divideButton').addEventListener('click', function() {
-    var firstValue = document.getElementById('firstValue').value
-    var secondValue = document.getElementById('secondValue').value
+    var firstValue = Number(document.getElementById('firstValue').value)
+    var secondValue = Number(document.getElementById('secondValue').value)
 
     var answer = divide(firstValue, secondValue)
 
